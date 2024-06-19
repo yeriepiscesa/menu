@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="5.14.1@b9d355e0829c397b9b3b47d0c0ed042a8a70284d">
+<files psalm-version="5.24.0@462c80e31c34e58cc4f750c656be3927e80e550e">
+  <file src="src/Integration/RoutingExtension.php">
+    <RiskyTruthyFalsyComparison>
+      <code><![CDATA[empty($routes)]]></code>
+    </RiskyTruthyFalsyComparison>
+  </file>
+  <file src="src/Renderer/StringTemplateRenderer.php">
+    <RiskyTruthyFalsyComparison>
+      <code><![CDATA[$item->getUri()]]></code>
+      <code><![CDATA[$newTemplates]]></code>
+    </RiskyTruthyFalsyComparison>
+  </file>
   <file src="src/View/Helper/MenuHelper.php">
     <NonInvariantDocblockPropertyType>
-      <code>$_defaultConfig</code>
+      <code><![CDATA[$_defaultConfig]]></code>
     </NonInvariantDocblockPropertyType>
   </file>
 </files>
