@@ -1,9 +1,9 @@
 parameters:
-    checkMissingIterableValueType: false
     excludePaths:
         - tests/TestCase/KnpMenuTestCase.php
         - tests/TestCase/Renderer/KnpAbstractRendererTest.php
     ignoreErrors:
+        - identifier: missingType.iterableValue
         - '#PHPUnit\\Framework\\MockObject\\MockObject given#'
         - '#PHPUnit\\Framework\\MockObject\\MockObject::expects\(\)#'
         - '#Call to an undefined method Icings\\Menu\\Matcher\\Voter\\UrlVoter\|PHPUnit\\Framework\\MockObject\\MockObject::matchItem\(\)#'
