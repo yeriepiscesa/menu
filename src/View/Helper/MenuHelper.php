@@ -572,7 +572,7 @@ class MenuHelper extends Helper
     protected function _addMenu(ItemInterface $menu, array $options): void
     {
         $this->_menus[$menu->getName()] = $menu;
-        $this->_menuConfigurations->attach($menu, $options);
+        $this->_menuConfigurations->offsetSet($menu, $options);
     }
 
     /**
