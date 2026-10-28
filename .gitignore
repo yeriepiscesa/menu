@@ -5,3 +5,6 @@
 /tests/TestApp/tmp
 /.phpunit.cache
 /vendor
+
+# Generated migration locks
+**/Migrations/*.lock
